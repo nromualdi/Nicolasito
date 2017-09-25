@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0F867D1F78961A00B19844 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F867C1F78961A00B19844 /* CalculatorBrain.swift */; };
 		5CCCA2A01F64AFC900FD68A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCCA29F1F64AFC900FD68A5 /* AppDelegate.swift */; };
 		5CCCA2A21F64AFC900FD68A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCCA2A11F64AFC900FD68A5 /* ViewController.swift */; };
 		5CCCA2A51F64AFC900FD68A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CCCA2A31F64AFC900FD68A5 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C0F867C1F78961A00B19844 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		5CCCA29C1F64AFC900FD68A5 /* Nicolasito1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nicolasito1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCCA29F1F64AFC900FD68A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CCCA2A11F64AFC900FD68A5 /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				5CCCA2CD1F64BA4600FD68A5 /* Useless BS */,
 				5CCCA2A11F64AFC900FD68A5 /* ViewController.swift */,
+				5C0F867C1F78961A00B19844 /* CalculatorBrain.swift */,
 				5CCCA2A31F64AFC900FD68A5 /* Main.storyboard */,
 			);
 			path = Nicolasito1;
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0F867D1F78961A00B19844 /* CalculatorBrain.swift in Sources */,
 				5CCCA2A21F64AFC900FD68A5 /* ViewController.swift in Sources */,
 				5CCCA2A01F64AFC900FD68A5 /* AppDelegate.swift in Sources */,
 			);

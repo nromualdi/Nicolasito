@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
 
-    @IBOutlet weak var Display: UILabel?
+    @IBOutlet weak var Display: UILabel!
     
     var userIsInTheMiddleOfTyping:Bool = false
     
@@ -25,16 +25,30 @@ class ViewController: UIViewController {
             userIsInTheMiddleOfTyping = true
         }
     }
+     
+     var displayValue: Double {
+          get{
+               return Double(Display.text!)!
+          }
+          set{
+               Display.text = String(newValue)
+          }
+     }
+     //All this preceding bunch of code does is let me interact with the display value. It lets me get the present value, which in the display is a string, as a double digit, unwrapped. It lets me set the value, which has been calculated as a double digit, transforming it into a string and passing it into the display value.
+     
+     private var brain =  CalculatorBrain()
     
-    @IBAction func performoperation(_ sender: UIButton) {
-        userIsInTheMiddleOfTyping = false
-        if let mathematicalsymbol = sender.currentTitle {
-            switch mathematicalsymbol {
-            case "π":
-                Display!.text = String(Double.pi)
-            default:
-                break
-            }}
-    }
-    
+     @IBAction func performoperation(_ sender: UIButton) {
+          if userIsInTheMiddleOfTyping {
+               brain.setOperand(displayValue)
+               userIsInTheMiddleOfTyping = false
+          }
+          if let mathematicalSymbol = sender.currentTitle{
+               brain.performOperation(mathematicalSymbol)
+          }
+          if let result = brain.result{
+               displayValue = result
+          }
+     }
+     
 }
